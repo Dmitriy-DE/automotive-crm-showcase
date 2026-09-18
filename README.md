@@ -15,6 +15,10 @@ A real operational CRM codebase I worked on and extended across **web UI, API, b
 
 This is not presented as “my business” or “my commercial product”. The showcase is about the engineering work I did in the codebase.
 
+<p align="center">
+  <img src="./assets/overview.svg" width="100%" alt="System overview"/>
+</p>
+
 ## <code>01 / what_i_touched</code>
 
 <table>
