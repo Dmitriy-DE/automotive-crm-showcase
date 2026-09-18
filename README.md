@@ -6,125 +6,49 @@
   <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=000"/>
   <img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white"/>
   <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Jest-C21325?style=flat-square&logo=jest&logoColor=white"/>
 </p>
 
 # Automotive CRM
 
-A real operational CRM codebase I worked on and extended across **web UI, API, bots, scheduled jobs and Telegram Mini Apps**.
+Engineering work I did in a real operational CRM codebase spanning **staff web, public API, Telegram bots, Mini Apps and scheduled operations**.
 
-This is not presented as “my business” or “my commercial product”. The showcase is about the engineering work I did in the codebase.
+The product/business is not presented as mine; the code and system work shown here is the part I worked on myself.
 
-<p align="center">
-  <img src="./assets/overview.svg" width="100%" alt="System overview"/>
-</p>
+<p align="center"><img src="./assets/product-mockup.svg" width="100%" alt="Automotive CRM product mockup"/></p>
 
-## <code>01 / what_i_touched</code>
+## <code>01 / surfaces</code>
 
-<table>
-<tr>
-<td width="33%" valign="top">
-
-### Core CRM
-
-Staff-facing workflows, application API, auth, validation and operational data.
-
-</td>
-<td width="33%" valign="top">
-
-### External surfaces
-
-Public API, Telegram bots and multiple Mini Apps around the same domain.
-
-</td>
-<td width="33%" valign="top">
-
-### Operations
-
-Containerised runtimes, scheduled jobs, logging, uploads and deployment boundaries.
-
-</td>
-</tr>
-</table>
-
-<p align="center">
-  <img src="./assets/architecture-visual.svg" width="100%" alt="Architecture visual"/>
-</p>
+<p align="center"><img src="./assets/features.svg" width="100%" alt="Automotive CRM features"/></p>
 
 ## <code>02 / topology</code>
 
-~~~mermaid
-flowchart TB
-  CRM[React CRM]
-  MINI[Telegram Mini Apps]
-  EXT[External clients]
-  TG[Telegram]
+<p align="center"><img src="./assets/architecture-visual.svg" width="100%" alt="Automotive CRM architecture"/></p>
 
-  APP[Main Express service]
-  PAPI[Public API]
-  BOT[Bot service]
-  JOBS[Schedulers / posting workers]
+<p align="center"><img src="./assets/overview.svg" width="100%" alt="Automotive CRM system overview"/></p>
 
-  DB[(Operational DB)]
-  FILES[(Media / uploads)]
+## <code>03 / one_domain_many_channels</code>
 
-  CRM --> APP
-  MINI --> APP
-  EXT --> PAPI
-  TG --> BOT
-  JOBS --> APP
+<p align="center"><img src="./assets/flow-visual.svg" width="100%" alt="Automotive CRM workflow"/></p>
 
-  APP --> DB
-  APP --> FILES
-  PAPI --> DB
-  PAPI --> FILES
-  BOT --> DB
-~~~
+The rule is simple: **if web, API, bot and Mini App touch the same business state, the rule belongs on the server once.**
 
-<p align="center">
-  <img src="./assets/flow-visual.svg" width="100%" alt="Workflow visual"/>
-</p>
+## <code>04 / hard_parts</code>
 
-## <code>03 / why_it_is_not_just_crud</code>
+- stable shared state across multiple interfaces;
+- auth / validation / rate limits at the right boundaries;
+- uploads, image processing and document flows;
+- scheduled operational jobs that should not need babysitting;
+- independently restartable Docker services with shared persistence;
+- server, bot and client test layers.
 
-| Surface | Engineering concern |
-|---|---|
-| Staff CRM | consistent business state + auth + validation |
-| Public API | stable external contract + rate limits |
-| Bots | asynchronous channel behaviour |
-| Mini Apps | lightweight user-facing flows |
-| Files | uploads, image processing, document exports |
-| Scheduled jobs | repeatable operations without manual babysitting |
-| Docker | independent service lifecycle with shared persistence |
-
-## <code>04 / practical_stack</code>
-
-- JWT authentication
-- Helmet + rate limiting
-- Express validation
-- SQLite persistence for the current deployment profile
-- image/document/spreadsheet processing
-- structured logging
-- cron-style operational work
-- Jest / Supertest server tests
-- bot tests
-- client tests
-
-## <code>05 / design_rule</code>
-
-> **One domain, many interfaces. Put the rule on the server once.**
-
-When the same vehicle/customer/operation appears in a CRM screen, bot and Mini App, duplicating domain logic in every client is how they drift apart.
-
-## <code>06 / technical_proof</code>
+## <code>05 / inspect</code>
 
 - [Architecture](docs/ARCHITECTURE.md)
 - [Operational boundaries](docs/OPERATIONS.md)
 - [Sanitised API route](examples/vehicle-api.js)
 
-<details>
-<summary><b>Public / private boundary</b></summary>
+<details><summary><b>Public / private boundary</b></summary>
 
-No production customer data, credentials, domains, deployment hosts or proprietary business procedures are published here.
+No customer data, credentials, production domains, deployment hosts or proprietary business procedures are published here.
 
 </details>
