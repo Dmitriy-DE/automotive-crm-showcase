@@ -47,6 +47,10 @@ Containerised runtimes, scheduled jobs, logging, uploads and deployment boundari
 </tr>
 </table>
 
+<p align="center">
+  <img src="./assets/architecture-visual.svg" width="100%" alt="Architecture visual"/>
+</p>
+
 ## <code>02 / topology</code>
 
 ~~~mermaid
@@ -76,6 +80,10 @@ flowchart TB
   PAPI --> FILES
   BOT --> DB
 ~~~
+
+<p align="center">
+  <img src="./assets/flow-visual.svg" width="100%" alt="Workflow visual"/>
+</p>
 
 ## <code>03 / why_it_is_not_just_crud</code>
 
