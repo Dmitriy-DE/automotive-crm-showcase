@@ -41,6 +41,10 @@ The rule is simple: **if web, API, bot and Mini App touch the same business stat
 - independently restartable Docker services with shared persistence;
 - server, bot and client test layers.
 
+<p align="center">
+  <img src="./assets/engineering-signature.svg" width="100%" alt="Engineering signature"/>
+</p>
+
 ## <code>05 / inspect</code>
 
 - [Architecture](docs/ARCHITECTURE.md)
