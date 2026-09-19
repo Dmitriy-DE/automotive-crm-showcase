@@ -1,18 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400">
-<defs>
-<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1020"/><stop offset="1" stop-color="#0d1117"/></linearGradient>
-<linearGradient id="a" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3fb950"/><stop offset="1" stop-color="#58a6ff"/></linearGradient>
-<filter id="g"><feGaussianBlur stdDeviation="32"/></filter>
-</defs>
-<rect width="1200" height="400" rx="28" fill="url(#bg)"/>
-<circle cx="1050" cy="50" r="160" fill="#58a6ff" opacity=".16" filter="url(#g)"/>
-<circle cx="850" cy="330" r="180" fill="#3fb950" opacity=".12" filter="url(#g)"/>
-<g opacity=".08" stroke="#8b949e"><path d="M0 80H1200M0 160H1200M0 240H1200M0 320H1200"/><path d="M150 0V400M300 0V400M450 0V400M600 0V400M750 0V400M900 0V400M1050 0V400"/></g>
-<text x="70" y="105" fill="#8b949e" font-family="monospace" font-size="15">PUBLIC ENGINEERING SHOWCASE</text>
-<text x="70" y="175" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="48" font-weight="700">Automotive CRM</text>
-<rect x="70" y="198" width="520" height="5" rx="2.5" fill="url(#a)"/>
-<text x="70" y="250" fill="#c9d1d9" font-family="Arial,Helvetica,sans-serif" font-size="20">One operational domain across web, API, bots and Mini Apps</text>
-<g transform="translate(70 320)"><rect width="132" height="34" rx="17" fill="#161b22" stroke="#30363d"/><text x="66" y="22" text-anchor="middle" fill="#c9d1d9" font-family="monospace" font-size="13">Node.js</text></g><g transform="translate(220 320)"><rect width="132" height="34" rx="17" fill="#161b22" stroke="#30363d"/><text x="66" y="22" text-anchor="middle" fill="#c9d1d9" font-family="monospace" font-size="13">React</text></g><g transform="translate(370 320)"><rect width="132" height="34" rx="17" fill="#161b22" stroke="#30363d"/><text x="66" y="22" text-anchor="middle" fill="#c9d1d9" font-family="monospace" font-size="13">Docker</text></g>
-<path d="M935 118 L958 118 L958 204 L790 204" fill="none" stroke="#3fb950" opacity=".55"/>
-<g transform="translate(790 90)"><rect width="145" height="56" rx="12" fill="#0d1117" stroke="#3fb950"/><text x="72.5" y="33" text-anchor="middle" fill="#f0f6fc" font-family="monospace" font-size="13">crm</text></g><g transform="translate(960 90)"><rect width="145" height="56" rx="12" fill="#0d1117" stroke="#30363d"/><text x="72.5" y="33" text-anchor="middle" fill="#c9d1d9" font-family="monospace" font-size="13">api</text></g><g transform="translate(790 176)"><rect width="145" height="56" rx="12" fill="#0d1117" stroke="#30363d"/><text x="72.5" y="33" text-anchor="middle" fill="#c9d1d9" font-family="monospace" font-size="13">bots</text></g><g transform="translate(960 176)"><rect width="145" height="56" rx="12" fill="#0d1117" stroke="#30363d"/><text x="72.5" y="33" text-anchor="middle" fill="#c9d1d9" font-family="monospace" font-size="13">mini apps</text></g>
+<rect width="1200" height="400" rx="28" fill="#f0f2f5"/>
+<rect x="1" y="1" width="1198" height="398" rx="27" fill="none" stroke="#e8eaed"/>
+<rect x="0" y="0" width="1200" height="72" rx="28" fill="#fff"/><rect y="42" width="1200" height="30" fill="#fff"/>
+<text x="62" y="45" fill="#0F4158" font-family="Arial" font-size="20" font-weight="700">CRM AVTOSVIT</text>
+<text x="64" y="126" fill="#6b7280" font-family="monospace" font-size="12">PUBLIC ENGINEERING SHOWCASE</text>
+<text x="64" y="184" fill="#0d0d0f" font-family="Arial" font-size="48" font-weight="700">Automotive CRM</text>
+<text x="64" y="221" fill="#6b7280" font-family="Arial" font-size="18">Web CRM · public API · Telegram Mini Apps</text>
+<rect x="64" y="244" width="360" height="5" rx="2.5" fill="#0F4158"/>
+<g transform="translate(64 304)"><g transform="translate(0 0)"><rect width="108" height="32" rx="16" fill="#fff" stroke="#dde0e6"/><text x="54" y="20" text-anchor="middle" fill="#0F4158" font-family="monospace" font-size="10">Node.js</text></g><g transform="translate(122 0)"><rect width="108" height="32" rx="16" fill="#fff" stroke="#dde0e6"/><text x="54" y="20" text-anchor="middle" fill="#0F4158" font-family="monospace" font-size="10">React</text></g><g transform="translate(244 0)"><rect width="108" height="32" rx="16" fill="#fff" stroke="#dde0e6"/><text x="54" y="20" text-anchor="middle" fill="#0F4158" font-family="monospace" font-size="10">Chakra UI</text></g><g transform="translate(366 0)"><rect width="108" height="32" rx="16" fill="#fff" stroke="#dde0e6"/><text x="54" y="20" text-anchor="middle" fill="#0F4158" font-family="monospace" font-size="10">Docker</text></g></g>
+<g transform="translate(720 102)">
+<rect width="410" height="220" rx="18" fill="#fff" stroke="#e8eaed"/>
+<text x="22" y="31" fill="#0F4158" font-family="Arial" font-size="17" font-weight="700">Каталог автомобілів</text>
+<rect x="22" y="52" width="260" height="32" rx="7" fill="#f7f8fa" stroke="#e8eaed"/><text x="36" y="72" fill="#9ca3af" font-family="Arial" font-size="10">Пошук авто…</text>
+<g transform="translate(22 100)"><line x1="0" y1="0" x2="366" y2="0" stroke="#e8eaed"/><text x="0" y="23" fill="#0d0d0f" font-family="Arial" font-size="10" font-weight="700">Volkswagen ID.4</text><text x="142" y="23" fill="#6b7280" font-family="Arial" font-size="9">2024 · Запоріжжя</text><text x="306" y="23" fill="#16a34a" font-family="Arial" font-size="10" font-weight="700">$24 900</text></g><g transform="translate(22 136)"><line x1="0" y1="0" x2="366" y2="0" stroke="#e8eaed"/><text x="0" y="23" fill="#0d0d0f" font-family="Arial" font-size="10" font-weight="700">Toyota RAV4</text><text x="142" y="23" fill="#6b7280" font-family="Arial" font-size="9">2023 · Дніпро</text><text x="306" y="23" fill="#16a34a" font-family="Arial" font-size="10" font-weight="700">$27 500</text></g><g transform="translate(22 172)"><line x1="0" y1="0" x2="366" y2="0" stroke="#e8eaed"/><text x="0" y="23" fill="#0d0d0f" font-family="Arial" font-size="10" font-weight="700">Kia Niro</text><text x="142" y="23" fill="#6b7280" font-family="Arial" font-size="9">2022 · В дорозі</text><text x="306" y="23" fill="#16a34a" font-family="Arial" font-size="10" font-weight="700">$21 800</text></g>
+</g>
 </svg>
