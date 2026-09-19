@@ -1,33 +1,33 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
-<defs><linearGradient id="g"><stop stop-color="#3fb950"/><stop offset="1" stop-color="#58a6ff"/></linearGradient></defs>
-<rect width="1200" height="300" rx="26" fill="#0d1117" stroke="#30363d"/>
-<text x="48" y="58" fill="#f0f6fc" font-family="Arial" font-size="24" font-weight="700">Core operational domain</text>
-<text x="48" y="84" fill="#8b949e" font-family="monospace" font-size="11">the objects / states the rest of the system is built around</text>
+<defs><linearGradient id="g"><stop stop-color="#0F4158"/><stop offset="1" stop-color="#2563eb"/></linearGradient></defs>
+<rect width="1200" height="300" rx="26" fill="#f0f2f5" stroke="#e8eaed"/>
+<text x="48" y="58" fill="#0d0d0f" font-family="Arial" font-size="24" font-weight="700">Core operational domain</text>
+<text x="48" y="84" fill="#9ca3af" font-family="monospace" font-size="11">the objects / states the rest of the system is built around</text>
 <rect x="48" y="99" width="250" height="4" rx="2" fill="url(#g)"/>
 <g transform="translate(48 132)">
-<rect width="206.4" height="110" rx="17" fill="#111827" stroke="#30363d"/>
-<text x="103.2" y="31" text-anchor="middle" fill="#3fb950" font-family="monospace" font-size="10">01</text>
-<text x="103.2" y="63" text-anchor="middle" fill="#f0f6fc" font-family="Arial" font-size="15" font-weight="700">Vehicle</text>
-<text x="103.2" y="86" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="9">asset</text>
+<rect width="206.4" height="110" rx="17" fill="#ffffff" stroke="#e8eaed"/>
+<text x="103.2" y="31" text-anchor="middle" fill="#0F4158" font-family="monospace" font-size="10">01</text>
+<text x="103.2" y="63" text-anchor="middle" fill="#0d0d0f" font-family="Arial" font-size="15" font-weight="700">Vehicle</text>
+<text x="103.2" y="86" text-anchor="middle" fill="#9ca3af" font-family="monospace" font-size="9">asset</text>
 </g><g transform="translate(272.4 132)">
-<rect width="206.4" height="110" rx="17" fill="#111827" stroke="#30363d"/>
-<text x="103.2" y="31" text-anchor="middle" fill="#58a6ff" font-family="monospace" font-size="10">02</text>
-<text x="103.2" y="63" text-anchor="middle" fill="#f0f6fc" font-family="Arial" font-size="15" font-weight="700">Client</text>
-<text x="103.2" y="86" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="9">owner</text>
+<rect width="206.4" height="110" rx="17" fill="#ffffff" stroke="#e8eaed"/>
+<text x="103.2" y="31" text-anchor="middle" fill="#2563eb" font-family="monospace" font-size="10">02</text>
+<text x="103.2" y="63" text-anchor="middle" fill="#0d0d0f" font-family="Arial" font-size="15" font-weight="700">Client</text>
+<text x="103.2" y="86" text-anchor="middle" fill="#9ca3af" font-family="monospace" font-size="9">owner</text>
 </g><g transform="translate(496.8 132)">
-<rect width="206.4" height="110" rx="17" fill="#111827" stroke="#30363d"/>
-<text x="103.2" y="31" text-anchor="middle" fill="#3fb950" font-family="monospace" font-size="10">03</text>
-<text x="103.2" y="63" text-anchor="middle" fill="#f0f6fc" font-family="Arial" font-size="15" font-weight="700">Transit</text>
-<text x="103.2" y="86" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="9">movement</text>
+<rect width="206.4" height="110" rx="17" fill="#ffffff" stroke="#e8eaed"/>
+<text x="103.2" y="31" text-anchor="middle" fill="#0F4158" font-family="monospace" font-size="10">03</text>
+<text x="103.2" y="63" text-anchor="middle" fill="#0d0d0f" font-family="Arial" font-size="15" font-weight="700">Transit</text>
+<text x="103.2" y="86" text-anchor="middle" fill="#9ca3af" font-family="monospace" font-size="9">movement</text>
 </g><g transform="translate(721.2 132)">
-<rect width="206.4" height="110" rx="17" fill="#111827" stroke="#30363d"/>
-<text x="103.2" y="31" text-anchor="middle" fill="#58a6ff" font-family="monospace" font-size="10">04</text>
-<text x="103.2" y="63" text-anchor="middle" fill="#f0f6fc" font-family="Arial" font-size="15" font-weight="700">Document</text>
-<text x="103.2" y="86" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="9">evidence</text>
+<rect width="206.4" height="110" rx="17" fill="#ffffff" stroke="#e8eaed"/>
+<text x="103.2" y="31" text-anchor="middle" fill="#2563eb" font-family="monospace" font-size="10">04</text>
+<text x="103.2" y="63" text-anchor="middle" fill="#0d0d0f" font-family="Arial" font-size="15" font-weight="700">Document</text>
+<text x="103.2" y="86" text-anchor="middle" fill="#9ca3af" font-family="monospace" font-size="9">evidence</text>
 </g><g transform="translate(945.6 132)">
-<rect width="206.4" height="110" rx="17" fill="#111827" stroke="#30363d"/>
-<text x="103.2" y="31" text-anchor="middle" fill="#3fb950" font-family="monospace" font-size="10">05</text>
-<text x="103.2" y="63" text-anchor="middle" fill="#f0f6fc" font-family="Arial" font-size="15" font-weight="700">Action</text>
-<text x="103.2" y="86" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="9">workflow</text>
+<rect width="206.4" height="110" rx="17" fill="#ffffff" stroke="#e8eaed"/>
+<text x="103.2" y="31" text-anchor="middle" fill="#0F4158" font-family="monospace" font-size="10">05</text>
+<text x="103.2" y="63" text-anchor="middle" fill="#0d0d0f" font-family="Arial" font-size="15" font-weight="700">Action</text>
+<text x="103.2" y="86" text-anchor="middle" fill="#9ca3af" font-family="monospace" font-size="9">workflow</text>
 </g>
 </svg>
