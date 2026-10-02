@@ -2,89 +2,41 @@
 
 <table>
 <tr>
-<td width="50%" valign="top">
-
-### What it is
-
-Engineering work across an operational automotive CRM ecosystem.
-
-One backend state is consumed by:
-
-- staff CRM
-- public catalogue API
-- Telegram bots
-- calculator Mini App
-- catalogue Mini App
-- dealer Mini App
-- transit Mini App
-- scheduled publishing jobs
-
-</td>
-<td width="50%" valign="top">
-
-### Engineering focus
-
-- shared business rules
-- explicit vehicle lifecycle
-- JWT / role boundaries
-- media processing
-- document generation
-- public/private API separation
-- restartable services
-- shared persistence
-
-</td>
+<td width="20%" align="center"><b>Staff CRM</b><br/><sub>internal operations</sub></td>
+<td width="20%" align="center"><b>Public API</b><br/><sub>catalogue boundary</sub></td>
+<td width="20%" align="center"><b>Telegram</b><br/><sub>bots + publishing</sub></td>
+<td width="20%" align="center"><b>4 Mini Apps</b><br/><sub>client / partner surfaces</sub></td>
+<td width="20%" align="center"><b>One domain</b><br/><sub>shared business rules</sub></td>
 </tr>
 </table>
 
-<img src="./assets/actual-surfaces.svg" width="100%" alt="Automotive CRM surfaces"/>
-
-<br/>
+<p align="center"><img src="./assets/actual-surfaces.svg" width="100%" alt="Product surfaces"/></p>
 
 <table>
 <tr>
-<td width="52%" valign="top">
-<img src="./assets/features.svg" width="100%" alt="Engineering surface"/>
-</td>
-<td width="48%" valign="top">
-
-### One domain, many channels
-
-The same vehicle, client and sale state is reused across several interfaces.
-
-The backend owns validation and state transitions once instead of rebuilding them independently in every UI or bot.
-
-</td>
+<td width="50%" valign="top"><img src="./assets/features.svg" width="100%" alt="Engineering surface"/></td>
+<td width="50%" valign="top"><img src="./assets/core-model.svg" width="100%" alt="Core model"/></td>
 </tr>
 </table>
-
-<img src="./assets/core-model.svg" width="100%" alt="Core model"/>
-
-<br/>
 
 <table>
 <tr>
-<td width="48%" valign="top">
-
-### Topology
-
-The system combines a staff SPA, Express API, SQLite WAL, public API, Telegram services, Mini Apps, media/document flows and scheduled jobs.
-
-</td>
-<td width="52%" valign="top">
-<img src="./assets/architecture-visual.svg" width="100%" alt="Topology"/>
-</td>
+<td width="48%" valign="top"><img src="./assets/overview.svg" width="100%" alt="Shared domain"/></td>
+<td width="52%" valign="top"><img src="./assets/architecture-visual.svg" width="100%" alt="Topology"/></td>
 </tr>
 </table>
 
-<img src="./assets/overview.svg" width="100%" alt="Shared domain"/>
+<p align="center"><img src="./assets/flow-visual.svg" width="100%" alt="Operational flow"/></p>
+<p align="center"><img src="./assets/engineering-signature.svg" width="100%" alt="Engineering signature"/></p>
 
-<br/>
+<details>
+<summary><b>Engineering notes</b></summary>
 
-<img src="./assets/flow-visual.svg" width="100%" alt="Operational flow"/>
+- Shared vehicle/client/sale state across web, API, bots and Mini Apps
+- Explicit vehicle status transitions
+- JWT + role boundaries
+- Public/private data split
+- Media processing and document generation
+- Restartable Docker services with shared persistence
 
-<br/>
-
-<img src="./assets/engineering-signature.svg" width="100%" alt="Engineering signature"/>
-
-<p align="center"><sub>Private source · public engineering showcase</sub></p>
+</details>
