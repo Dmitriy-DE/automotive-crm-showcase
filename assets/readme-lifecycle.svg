@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="360" viewBox="0 0 1600 360">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#061018"/><stop offset="1" stop-color="#0b1217"/></linearGradient></defs>
+<rect width="1600" height="360" rx="26" fill="url(#bg)"/><rect x="1" y="1" width="1598" height="358" rx="25" fill="none" stroke="#1d5266"/>
+<text x="48" y="58" fill="#16d9ff" font-family="monospace" font-size="24" font-weight="700">VEHICLE LIFECYCLE</text>
+<text x="48" y="92" fill="#a8bcc8" font-family="Arial" font-size="21">The status is a shared business state, not a visual label local to one frontend.</text>
+<g font-family="Arial" text-anchor="middle">
+<g transform="translate(90 150)"><rect width="260" height="105" rx="18" fill="#0a1720" stroke="#2fe3b0"/><text x="130" y="42" fill="#2fe3b0" font-size="27" font-weight="700">available</text><text x="130" y="75" fill="#dce5ea" font-size="17">listed / can be sold</text></g>
+<g transform="translate(470 150)"><rect width="260" height="105" rx="18" fill="#0a1720" stroke="#55b6ff"/><text x="130" y="42" fill="#55b6ff" font-size="27" font-weight="700">in_progress</text><text x="130" y="75" fill="#dce5ea" font-size="17">active sales flow</text></g>
+<g transform="translate(850 150)"><rect width="260" height="105" rx="18" fill="#0a1720" stroke="#ffb547"/><text x="130" y="42" fill="#ffb547" font-size="27" font-weight="700">sold</text><text x="130" y="75" fill="#dce5ea" font-size="17">completed handover</text></g>
+<g transform="translate(1230 150)"><rect width="260" height="105" rx="18" fill="#0a1720" stroke="#8b5cf6"/><text x="130" y="42" fill="#b89cff" font-size="27" font-weight="700">restored</text><text x="130" y="75" fill="#dce5ea" font-size="17">returned to active stock</text></g>
+</g>
+<g stroke="#2b6074" stroke-width="4"><path d="M350 203H470"/><path d="M730 203H850"/><path d="M1110 203H1230"/></g>
+<polygon points="470,203 450,192 450,214" fill="#2b6074"/><polygon points="850,203 830,192 830,214" fill="#2b6074"/><polygon points="1230,203 1210,192 1210,214" fill="#2b6074"/>
+<text x="90" y="310" fill="#879ca8" font-family="Arial" font-size="18">Validation and access control live on the backend so web, API, bots and Mini Apps cannot invent their own transition rules.</text>
+</svg>
