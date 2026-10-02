@@ -1,4 +1,4 @@
-<p align="center"><img src="./assets/showcase.svg" width="100%" alt="Automotive CRM engineering showcase"/></p>
+<p align="center"><img src="./assets/hero.svg" width="100%" alt="Automotive CRM"/></p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Node.js-18-339933?style=flat-square&logo=nodedotjs&logoColor=white"/>
@@ -10,31 +10,47 @@
 
 # Automotive CRM
 
-Engineering work in a real operational automotive CRM ecosystem spanning **staff web, public API, Telegram bots, four Mini Apps and scheduled publishing**.
+Engineering work across an operational automotive CRM ecosystem spanning **staff web, public API, Telegram bots, four Mini Apps and scheduled publishing**.
 
-The business/product is not presented as mine; the system engineering shown here is the part I worked on.
+The business itself is not presented as mine; this showcase focuses on the architecture and engineering work around a shared operational domain.
 
-> **One business state. Many channels.** If web, API, bot and Mini App touch the same operational state, the rule belongs on the server once.
+> **One business state. Many channels.** If the same vehicle, client or sale is visible through several interfaces, the rule belongs on the server once.
 
-## What the system covers
+## <code>01 / actual_surfaces</code>
 
-- vehicle inventory, pricing, status and media;
-- clients and lead history;
-- sales, commissions, checklists and documents;
-- a read-only public catalogue API that excludes private commercial data;
-- Telegram catalogue/calculator/notification flows;
-- Mini Apps for calculator, catalogue, dealer and transit use cases;
-- transit/channel publishing and scheduled operational jobs;
-- JWT auth in httpOnly cookies, role checks, validation, rate limits and security headers;
-- Docker Compose deployment with shared persistence, health checks and backup/restore procedures.
+<p align="center"><img src="./assets/actual-surfaces.svg" width="100%" alt="Automotive CRM product surfaces"/></p>
 
-## Core state flow
+The staff CRM covers inventory, clients, sales, photos, transit, catalogue, team operations and reports. Public and Telegram-facing surfaces reuse the same server-owned state instead of reimplementing business rules.
 
-**available → in_progress → sold → restored**
+## <code>02 / engineering_surface</code>
 
-The same state is consumed by the staff CRM, public catalogue, bots and Mini Apps instead of being reimplemented independently per interface.
+<p align="center"><img src="./assets/features.svg" width="100%" alt="Automotive CRM engineering surface"/></p>
 
-## Inspect
+## <code>03 / core_model</code>
+
+<p align="center"><img src="./assets/core-model.svg" width="100%" alt="Automotive CRM core model"/></p>
+
+The vehicle lifecycle is explicit: **available → in_progress → sold → restored**. Validation, access control and state transitions stay in shared backend logic.
+
+## <code>04 / one_domain_many_channels</code>
+
+<p align="center"><img src="./assets/overview.svg" width="100%" alt="Automotive CRM shared domain"/></p>
+
+One operational source of truth feeds the staff CRM, public catalogue, Telegram bots and the calculator, catalogue, dealer and transit Mini Apps.
+
+## <code>05 / topology</code>
+
+<p align="center"><img src="./assets/architecture-visual.svg" width="100%" alt="Automotive CRM topology"/></p>
+
+## <code>06 / operational_flow</code>
+
+<p align="center"><img src="./assets/flow-visual.svg" width="100%" alt="Automotive CRM operational flow"/></p>
+
+## <code>07 / engineering_signature</code>
+
+<p align="center"><img src="./assets/engineering-signature.svg" width="100%" alt="Automotive CRM engineering signature"/></p>
+
+## <code>08 / inspect</code>
 
 - [Architecture](docs/ARCHITECTURE.md)
 - [Operational boundaries](docs/OPERATIONS.md)
